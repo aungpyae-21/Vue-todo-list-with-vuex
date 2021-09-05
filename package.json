@@ -3,19 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "serve": "vite preview",
+    "build": "vite build",
+    "backend": "json-server --watch db.json --port 5000",
+    "dev": "vite"
   },
   "dependencies": {
+    "@mdi/font": "5.9.55",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "json-server": "^0.16.3",
+    "roboto-fontface": "*",
     "vue": "^3.0.0",
+    "vuetify": "^3.0.0-alpha.0",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.4",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0"
+    "@vue/compiler-sfc": "^3.0.0",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vite": "^2.0.0",
+    "vue-cli-plugin-vuetify": "~2.4.2"
   },
   "browserslist": [
     "> 1%",
